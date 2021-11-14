@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/spring/ssm/</loc>
+    
+    <lastmod>2021-11-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/system/toos/</loc>
     
     <lastmod>2021-11-14</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>http://example.com/2021/01/17/spring/SpringSecurity/</loc>
-    
-    <lastmod>2021-11-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/spring/ssm/</loc>
     
     <lastmod>2021-11-06</lastmod>
     
