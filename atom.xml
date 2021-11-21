@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-16T00:29:53.465Z</updated>
+  <updated>2021-11-21T03:00:18.834Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>oracle数据泵</title>
+    <link href="http://example.com/database/oracle/"/>
+    <id>http://example.com/database/oracle/</id>
+    <published>2021-11-21T08:38:52.000Z</published>
+    <updated>2021-11-21T03:00:18.834Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="查询表空间"><a href="#查询表空间" class="headerlink" title="查询表空间"></a>查询表空间</h2><h3 id="查看数据中创建的目录"><a href="#查看数据中创建的目录" class="headerlink" title="查看数据中创建的目录"></a>查看数据中创建的目录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from dba_directories</span><br></pre></td></tr></table></figure><h2 id="创建导出目录"><a href="#创建导出目录" class="headerlink" title="创建导出目录"></a>创建导出目录</h2><p><strong>1.登录sysdba用户</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlplus / as sysdba</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su -p oracle -c &quot;sqlplus / as sysdba&quot;</span><br></pre></td></tr></table></figure><p><strong>2.创建Oracle目录</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE OR REPLACE DIRECTORY dump_dir AS &#x27;/folder_path&#x27;;</span><br></pre></td></tr></table></figure><p><strong>3.对此目录给用户授权</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRANT READ,WRITE ON DIRECTORY dump_dir TO username;</span><br></pre></td></tr></table></figure><p><strong>4.退出sysdba用户</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit;</span><br></pre></td></tr></table></figure><h2 id="导出dump文件"><a href="#导出dump文件" class="headerlink" title="导出dump文件"></a>导出dump文件</h2><h3 id="按表空间导出"><a href="#按表空间导出" class="headerlink" title="按表空间导出"></a>按表空间导出</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">expdp system/manager TABLESPACES=tablespace_name_01,tablespace_name_02 dumpfile=dump_file_name.dmp DIRECTORY=dump_dir;</span><br></pre></td></tr></table></figure><h3 id="按用户导出"><a href="#按用户导出" class="headerlink" title="按用户导出"></a>按用户导出</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">expdp username/password@orcl schemas=username dumpfile=dump_file_name.d</span><br><span class="line">mp DIRECTORY=dump_dir;</span><br></pre></td></tr></table></figure><h3 id="按表导出"><a href="#按表导出" class="headerlink" title="按表导出"></a>按表导出</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">expdp username/password@orcl TABLES=table_name_01,table_name_02,table_name_03 dumpfile=dump_file_name.dmp DIRECTORY=dump_dir;</span><br></pre></td></tr></table></figure><h2 id="dump文件导入"><a href="#dump文件导入" class="headerlink" title="dump文件导入"></a>dump文件导入</h2><h3 id="按用户导入"><a href="#按用户导入" class="headerlink" title="按用户导入"></a>按用户导入</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">impdp username/password schemas=username dumpfile=dump_file_name.dmp DIRECTORY=dump_dir;</span><br></pre></td></tr></table></figure><h3 id="按表空间导入"><a href="#按表空间导入" class="headerlink" title="按表空间导入"></a>按表空间导入</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">impdp system/manager TABLESPACES=tablespace_name dumpfile=dump_file_name.dmp DIRECTORY=dump_dir;</span><br></pre></td></tr></table></figure><h3 id="按数据库导入"><a href="#按数据库导入" class="headerlink" title="按数据库导入"></a>按数据库导入</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">impdb system/manager FULL=y dumpfile=dump_file_name.dmp DIRECTORY=dump_dir;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;查询表空间&quot;&gt;&lt;a href=&quot;#查询表空间&quot; class=&quot;headerlink&quot; title=&quot;查询表空间&quot;&gt;&lt;/a&gt;查询表空间&lt;/h2&gt;&lt;h3 id=&quot;查看数据中创建的目录&quot;&gt;&lt;a href=&quot;#查看数据中创建的目录&quot; class=&quot;headerlink&quot; </summary>
+      
+    
+    
+    
+    <category term="oracle" scheme="http://example.com/categories/oracle/"/>
+    
+    
+    <category term="oracle笔记" scheme="http://example.com/tags/oracle%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>springcloud2-服务拆分与远程调用</title>
+    <link href="http://example.com/spring/springcloud/"/>
+    <id>http://example.com/spring/springcloud/</id>
+    <published>2021-11-16T00:36:34.000Z</published>
+    <updated>2021-11-16T00:37:09.954Z</updated>
+    
+    
+    
+    
+    <category term="微服务技术" scheme="http://example.com/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="框架搭建" scheme="http://example.com/tags/%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>springcloud01-认识微服务</title>
