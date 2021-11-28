@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2021/11/28/cloud/Nacos%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/</loc>
+    
+    <lastmod>2021-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/11/28/cloud/nacos/</loc>
+    
+    <lastmod>2021-11-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/springcloud/ribbon/</loc>
     
     <lastmod>2021-11-28</lastmod>
