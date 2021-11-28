@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
 <meta property="article:published_time" content="2021-11-28T09:22:42.000Z">
-<meta property="article:modified_time" content="2021-11-28T09:23:20.682Z">
+<meta property="article:modified_time" content="2021-11-28T10:31:50.227Z">
 <meta property="article:author" content="Kesen">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/11/28/cloud/nacos/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
@@ -99,7 +99,7 @@ const getScript = url => new Promise((resolve, reject) => {
   isHome: false,
   isHighlightShrink: true,
   isToc: true,
-  postUpdate: '2021-11-28 17:23:20'
+  postUpdate: '2021-11-28 18:31:50'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -168,7 +168,7 @@ if (asideStatus !== undefined) {
 if (fontSizeVal !== undefined) {
   document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
 }})()</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kesen’s Blog" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Kesen’s Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">nacos</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-11-28T09:22:42.000Z" title="发表于 2021-11-28 17:22:42">2021-11-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-11-28T09:23:20.682Z" title="更新于 2021-11-28 17:23:20">2021-11-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="5-Nacos注册中心"><a href="#5-Nacos注册中心" class="headerlink" title="5.Nacos注册中心"></a>5.Nacos注册中心</h1><p>国内公司一般都推崇阿里巴巴的技术，比如注册中心，SpringCloudAlibaba也推出了一个名为Nacos的注册中心。</p>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Kesen’s Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">nacos</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-11-28T09:22:42.000Z" title="发表于 2021-11-28 17:22:42">2021-11-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-11-28T10:31:50.227Z" title="更新于 2021-11-28 18:31:50">2021-11-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="5-Nacos注册中心"><a href="#5-Nacos注册中心" class="headerlink" title="5.Nacos注册中心"></a>5.Nacos注册中心</h1><p>国内公司一般都推崇阿里巴巴的技术，比如注册中心，SpringCloudAlibaba也推出了一个名为Nacos的注册中心。</p>
 <h2 id="5-1-认识和安装Nacos"><a href="#5-1-认识和安装Nacos" class="headerlink" title="5.1.认识和安装Nacos"></a>5.1.认识和安装Nacos</h2><p><a target="_blank" rel="noopener" href="https://nacos.io/">Nacos</a>是阿里巴巴的产品，现在是<a target="_blank" rel="noopener" href="https://spring.io/projects/spring-cloud">SpringCloud</a>中的一个组件。相比<a target="_blank" rel="noopener" href="https://github.com/Netflix/eureka">Eureka</a>功能更加丰富，在国内受欢迎程度较高。</p>
 <p>安装方式可以参考课前资料《Nacos安装指南》</p>
 <h2 id="5-2-服务注册到nacos"><a href="#5-2-服务注册到nacos" class="headerlink" title="5.2.服务注册到nacos"></a>5.2.服务注册到nacos</h2><p>Nacos是SpringCloudAlibaba的组件，而SpringCloudAlibaba也遵循SpringCloud中定义的服务注册、服务发现规范。因此使用Nacos和使用Eureka对于微服务来说，并没有太大区别。</p>
@@ -197,7 +197,7 @@ if (fontSizeVal !== undefined) {
 <p><strong>注意</strong>：不要忘了注释掉eureka的地址</p>
 </blockquote>
 <h3 id="3）重启"><a href="#3）重启" class="headerlink" title="3）重启"></a>3）重启</h3><p>重启微服务后，登录nacos管理页面，可以看到微服务信息：</p>
-<p><img src="D:\data\YUN\1、微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式史上最全面的微服务全技术栈课程\实用篇\学习资料\day01-SpringCloud01\讲义\assets\image-20210713231439607.png" alt="image-20210713231439607"></p>
+<p><img src="https://i.loli.net/2021/11/28/92BFzMAlVJCm3xS.png" alt="image-20210713231439607"></p>
 <h2 id="5-3-服务分级存储模型"><a href="#5-3-服务分级存储模型" class="headerlink" title="5.3.服务分级存储模型"></a>5.3.服务分级存储模型</h2><p>一个<strong>服务</strong>可以有多个<strong>实例</strong>，例如我们的user-service，可以有:</p>
 <ul>
 <li>127.0.0.1:8081</li>
@@ -212,7 +212,7 @@ if (fontSizeVal !== undefined) {
 </ul>
 <p>Nacos就将同一机房内的实例 划分为一个<strong>集群</strong>。</p>
 <p>也就是说，user-service是服务，一个服务可以包含多个集群，如杭州、上海，每个集群下可以有多个实例，形成分级模型，如图：</p>
-<p><img src="D:\data\YUN\1、微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式史上最全面的微服务全技术栈课程\实用篇\学习资料\day01-SpringCloud01\讲义\assets\image-20210713232522531.png" alt="image-20210713232522531"></p>
+<p><img src="https://i.loli.net/2021/11/28/jw2ngd4H6PDkUKx.png" alt="image-20210713232522531"></p>
 <p>微服务互相访问时，应该尽可能访问同集群实例，因为本地访问速度更快。当本集群内不可用时，才访问其它集群。例如：</p>
 <p><img src="https://i.loli.net/2021/11/28/4QHVyrSYcixaLKs.png" alt="image-20210713232658928"></p>
 <p>杭州机房内的order-service应该优先访问同机房的user-service。</p>
@@ -220,14 +220,14 @@ if (fontSizeVal !== undefined) {
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">cloud:</span></span><br><span class="line">    <span class="attr">nacos:</span></span><br><span class="line">      <span class="attr">server-addr:</span> <span class="string">localhost:8848</span></span><br><span class="line">      <span class="attr">discovery:</span></span><br><span class="line">        <span class="attr">cluster-name:</span> <span class="string">HZ</span> <span class="comment"># 集群名称</span></span><br></pre></td></tr></table></figure>
 
 <p>重启两个user-service实例后，我们可以在nacos控制台看到下面结果：</p>
-<p><img src="D:\data\YUN\1、微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式史上最全面的微服务全技术栈课程\实用篇\学习资料\day01-SpringCloud01\讲义\assets\image-20210713232916215.png" alt="image-20210713232916215"></p>
+<p><img src="https://i.loli.net/2021/11/28/BgTKxWNiwRednq3.png" alt="image-20210713232916215"></p>
 <p>我们再次复制一个user-service启动配置，添加属性：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Dserver.port=8083 -Dspring.cloud.nacos.discovery.cluster-name=SH</span><br></pre></td></tr></table></figure>
 
 <p>配置如图所示：</p>
-<p><img src="D:\data\YUN\1、微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式史上最全面的微服务全技术栈课程\实用篇\学习资料\day01-SpringCloud01\讲义\assets\image-20210713233528982.png" alt="image-20210713233528982"></p>
+<p><img src="https://i.loli.net/2021/11/28/crJwWo8YTIbQSVj.png" alt="image-20210713233528982"></p>
 <p>启动UserApplication3后再次查看nacos控制台：</p>
-<p><img src="D:\data\YUN\1、微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式史上最全面的微服务全技术栈课程\实用篇\学习资料\day01-SpringCloud01\讲义\assets\image-20210713233727923.png" alt="image-20210713233727923"></p>
+<p><img src="https://i.loli.net/2021/11/28/5ZxPm9HWd4oOGJV.png" alt="image-20210713233727923"></p>
 <h3 id="5-3-2-同集群优先的负载均衡"><a href="#5-3-2-同集群优先的负载均衡" class="headerlink" title="5.3.2.同集群优先的负载均衡"></a>5.3.2.同集群优先的负载均衡</h3><p>默认的<code>ZoneAvoidanceRule</code>并不能实现根据同集群优先来实现负载均衡。</p>
 <p>因此Nacos中提供了一个<code>NacosRule</code>的实现，可以优先从同集群中挑选实例。</p>
 <p>1）给order-service配置集群信息</p>
@@ -259,11 +259,11 @@ if (fontSizeVal !== undefined) {
 <li>namespace下可以有group、service等</li>
 <li>不同namespace之间相互隔离，例如不同namespace的服务互相不可见</li>
 </ul>
-<p><img src="D:\data\YUN\1、微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式史上最全面的微服务全技术栈课程\实用篇\学习资料\day01-SpringCloud01\讲义\assets\image-20210714000101516.png" alt="image-20210714000101516"></p>
+<p><img src="https://i.loli.net/2021/11/28/7n3HYySbh8i6Kva.png" alt="image-20210714000101516"></p>
 <h3 id="5-5-1-创建namespace"><a href="#5-5-1-创建namespace" class="headerlink" title="5.5.1.创建namespace"></a>5.5.1.创建namespace</h3><p>默认情况下，所有service、data、group都在同一个namespace，名为public：</p>
 <p><img src="https://i.loli.net/2021/11/28/XblcukjhoIaiC2g.png" alt="image-20210714000414781"></p>
 <p>我们可以点击页面新增按钮，添加一个namespace：</p>
-<p><img src="D:\data\YUN\1、微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式史上最全面的微服务全技术栈课程\实用篇\学习资料\day01-SpringCloud01\讲义\assets\image-20210714000440143.png" alt="image-20210714000440143"></p>
+<p><img src="https://i.loli.net/2021/11/28/GQblsionWpgAXDk.png" alt="image-20210714000440143"></p>
 <p>然后，填写表单：</p>
 <p><img src="https://i.loli.net/2021/11/28/ULxwYq7OMJAP5oe.png" alt="image-20210714000505928"></p>
 <p>就能在页面看到一个新的namespace：</p>
@@ -278,7 +278,7 @@ if (fontSizeVal !== undefined) {
 <p><img src="https://i.loli.net/2021/11/28/qvjQJdI1RZrYTFe.png" alt="image-20210714000830703"></p>
 <p><img src="https://i.loli.net/2021/11/28/3cM9djPm4UtAHig.png" alt="image-20210714000837140"></p>
 <p>此时访问order-service，因为namespace不同，会导致找不到userservice，控制台会报错：</p>
-<p><img src="D:\data\YUN\1、微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式史上最全面的微服务全技术栈课程\实用篇\学习资料\day01-SpringCloud01\讲义\assets\image-20210714000941256.png" alt="image-20210714000941256"></p>
+<p><img src="https://i.loli.net/2021/11/28/B3YLTJEWhd6nrw4.png" alt="image-20210714000941256"></p>
 <h2 id="5-6-Nacos与Eureka的区别"><a href="#5-6-Nacos与Eureka的区别" class="headerlink" title="5.6.Nacos与Eureka的区别"></a>5.6.Nacos与Eureka的区别</h2><p>Nacos的服务实例分为两种l类型：</p>
 <ul>
 <li><p>临时实例：如果实例宕机超过一定时间，会从服务列表剔除，默认的类型。</p>
@@ -294,7 +294,7 @@ if (fontSizeVal !== undefined) {
 
 
 <p>Nacos和Eureka整体结构类似，服务注册、服务拉取、心跳等待，但是也存在一些差异：</p>
-<p><img src="D:\data\YUN\1、微服务开发框架SpringCloud+RabbitMQ+Docker+Redis+搜索+分布式史上最全面的微服务全技术栈课程\实用篇\学习资料\day01-SpringCloud01\讲义\assets\image-20210714001728017.png" alt="image-20210714001728017"></p>
+<p><img src="https://i.loli.net/2021/11/28/UrMbxc52dTgm94I.png" alt="image-20210714001728017"></p>
 <ul>
 <li><p>Nacos与eureka的共同点</p>
 <ul>
